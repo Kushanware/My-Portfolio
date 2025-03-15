@@ -64,6 +64,6 @@ class Certificates : AppCompatActivity() {
         """
 
         certificatesTextView.text = Html.fromHtml(content, Html.FROM_HTML_MODE_LEGACY)
-
+        certificatesTextView.movementMethod = LinkMovementMethod.getInstance()
     }
 }
