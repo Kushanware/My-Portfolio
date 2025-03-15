@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
 
         // Open resume link
         resumeButton.setOnClickListener {
-            val url = "https://drive.google.com/file/d/13SfU9b4RHULGZSnjEZcuMkYF2dNUaJGc/view?usp=sharing"
+            val url = "https://drive.google.com/file/d/1Equ6cogqWIGGRekVLJvnx0xida47M7v-/view?usp=drive_link"
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
         }
 

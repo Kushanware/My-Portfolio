@@ -2,6 +2,7 @@ package com.example.portfolio
 
 import android.os.Bundle
 import android.text.Html
+import android.text.method.LinkMovementMethod
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -48,10 +49,21 @@ class Certificates : AppCompatActivity() {
             Credential ID: 3872819<br><br>
 
             <b>Google Cloud Skill</b><br>
-            Show credential by Google<br>
+            Show credential by Google<br><br>
+
+            <b>What Is Generative AI?</b><br>
+            Issued by LinkedIn in Mar 2025<br>
+            <a href="https://www.linkedin.com/learning/certificates/77ae127f8d2fb3b885a503cedfa9fb91dd836f7f0eee02db601c15e43e7932f7">
+            View Credential</a><br><br>
+
+            <b>Walmart USA - Advanced Software Engineering Job Simulation</b><br>
+            Issued by Forage in Jan 2025<br>
+            Credential ID: CDhDWda7suKcz7Ss4<br>
+            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/prBZoAihniNijyD6d/oX6f9BbCL9kJDJzfg_prBZoAihniNijyD6d_Mv7KL8bZ9QuLHozYM_1737298895902_completion_certificate.pdf">
+            View Credential</a><br>
         """
 
-        // Set the HTML-formatted content to the TextView
         certificatesTextView.text = Html.fromHtml(content, Html.FROM_HTML_MODE_LEGACY)
+        certificatesTextView.movementMethod = LinkMovementMethod.getInstance()
     }
 }
